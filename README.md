@@ -20,7 +20,7 @@ There are 2 versions of this IC:
 |---------|------------------------------|-------------|
 | SYNC    | Your choice, specify in code | Chip Select |
 | DIN     | MOSI                         | SPI Data    |
-| CLK     | CLK                          | SPI Clock   |
+| SCLK     | CLK                          | SPI Clock   |
 
 ## Using the Library
 
