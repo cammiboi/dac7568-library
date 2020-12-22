@@ -15,6 +15,13 @@ There are 2 versions of this IC:
 * -A gain 1x, max output 2.5V when using internal ref, or 1x VREF_IN pin if using external voltage ref
 * -C gain 2x, max output 5V when using internal ref, or 2x VREF_IN pin if using external voltage ref
 
+## Connecting the DAC
+| DAC Pin | Arduino Pin                  | Desctipion  |
+|---------|------------------------------|-------------|
+| SYNC    | Your choice, specify in code | Chip Select |
+| DIN     | MOSI                         | SPI Data    |
+| CLK     | CLK                          | SPI Clock   |
+
 ## Using the Library
 
 ```c
