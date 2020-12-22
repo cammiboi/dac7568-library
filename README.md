@@ -44,6 +44,7 @@ void loop()
 ## Functions
 
 ```c
-set_chan_voltage(uint8_t chan_num, uint16_t voltage_mv)  // set chan_num (0-7) to voltage_mv mv
-set_chan_mode(uint8_t chan_num, channel_mode_t mode)     // set chan_num to mode (see enum in .h file for options) the DAC channels default to ON
+set_chan_voltage(uint8_t chan_num, uint16_t voltage_mv);  // set chan_num (0-7) to voltage_mv mv
+
+set_chan_mode(uint8_t chan_num, channel_mode_t mode);     // set chan_num to mode (see enum in .h file for options) the DAC channels default to ON
 ```
