@@ -15,6 +15,7 @@ class DAC7568
 {
 public:
     DAC7568(uint16_t vref_mv, int sync_pin);
+    void begin();
     void set_chan_mode(uint8_t chan_num, channel_mode_t mode);
     void set_chan_voltage(uint8_t chan_num, uint16_t voltage_mv);
 

@@ -13,7 +13,10 @@ DAC7568::DAC7568(uint16_t vref_mv, int sync_pin)
   _vref_mv = vref_mv;
 
   _output_gain = 1; // -A version has 1x gain, -C version has 2x gain
+}
 
+void DAC7568::begin()
+{
   SPI.begin();
 }
 
