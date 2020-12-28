@@ -17,10 +17,10 @@ There are 2 versions of this IC:
 
 ## Connecting the DAC
 | DAC Pin | Arduino Pin                  | Desctipion  |
-|---------|------------------------------|-------------|
+| ------- | ---------------------------- | ----------- |
 | SYNC    | Your choice, specify in code | Chip Select |
 | DIN     | MOSI                         | SPI Data    |
-| SCLK     | CLK                          | SPI Clock   |
+| SCLK    | CLK                          | SPI Clock   |
 
 ## Using the Library
 
@@ -32,6 +32,7 @@ DAC7568 DAC = DAC7568(3300, 17); // setup DAC, 3.3V external reference (VREF_IN 
 
 void setup()
 {
+    DAC.begin();
 }
 
 void loop()
